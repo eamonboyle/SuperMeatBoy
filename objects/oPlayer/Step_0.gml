@@ -18,39 +18,43 @@ if (place_meeting(x, y + 1, oWall) && (key_jump))
 	vsp = -7;
 }
 
-
-walljumping = 0;
-walljumpframes = 360;
-walljumpframe = 0;
-
-
-
 // horizontal collision
-if (place_meeting(x + hsp, y, oWall)) 
-{
-	// if not hitting wall
-	while (!place_meeting(x + sign(hsp), y, oWall))
-	{
-		x = x + sign(hsp);
-	}
+if (place_meeting(x + hsp, y, oWall))
+{	
+    while (!place_meeting(x + sign(hsp), y, oWall))
+    {
+        x += sign(hsp);
+    }
 	
-	if(place_meeting(x + sign(hsp), y, oWall) && !place_meeting(x, y + 1, oWall) && key_jump)
+    hsp = 0;
+}
+
+
+// walljump code
+if (place_meeting(x + 1, y, oWall) || place_meeting(x - 1, y, oWall) && !place_meeting(x, y + 1, oWall))
+{
+	
+	if (key_jump && !walljumping && !endingwalljump)
 	{
 		walljumping = 1;
-		show_debug_message("WALL JUMP");	
-		x = x - sign(hsp);
+		endingwalljump = 1;
+		alarm[0] = 18;
+		alarm[1] = 40;
 	}
-	
-	while (walljumping)
-	{
-			
-	}
-	
-	
-	hsp = 0;
 }
-x = x + hsp;
 
+
+// figure out here, minus if going right, plus if going left
+if (!walljumping) {
+	if (!endingwalljump)
+		x = x + hsp;
+	else
+		x = x - 2;
+}
+else
+{
+	x = x - 4;
+}
 
 
 
@@ -64,4 +68,8 @@ if (place_meeting(x, y + vsp, oWall))
 	}
 	vsp = 0;
 }
-y = y + vsp;
+
+if (!walljumping)
+	y = y + vsp;
+else
+	y = y - 4;
