@@ -39,6 +39,30 @@
             }
         },
         {
+            "Key": "102de230-7e31-4794-b595-eb60ae8e7363",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa01",
+                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "21a51dba-8bab-4262-8008-4ef95e743316",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa02",
+                "resourcePath": "objects\\oGame\\oGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2bd1a407-1f60-45f5-a91e-50be18fe11ea",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa03",
+                "resourcePath": "objects\\oSpawn\\oSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26020603-ca87-4514-ba99-d2cd1a128e29",
             "Value": {
                 "id": "8a09e05f-2240-425b-bd76-8c579f86f44c",
@@ -79,6 +103,22 @@
             }
         },
         {
+            "Key": "47b8c020-7f67-411e-aed8-ff3c497addc9",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa07",
+                "resourcePath": "sprites\\sSpike\\sSpike.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d20df57d-df93-4d70-b04c-019a963aa3da",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa08",
+                "resourcePath": "sprites\\sGoal\\sGoal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4d14e3fc-d980-4196-9c7e-1b8c986a3314",
             "Value": {
                 "id": "22df0df6-0230-4e89-a02c-07216d33606c",
@@ -103,11 +143,35 @@
             }
         },
         {
+            "Key": "59cfc7a1-26b3-41a7-8598-2b0bd1feef93",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa04",
+                "resourcePath": "objects\\oSpike\\oSpike.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "68d7a245-f0a2-4efe-9840-2db55dfffb7b",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa05",
+                "resourcePath": "sprites\\sSpawn\\sSpawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6683834d-cb87-431c-af85-15f7865b3ca0",
             "Value": {
                 "id": "81a65bbc-9362-47f3-bd1b-68b529237249",
                 "resourcePath": "views\\6683834d-cb87-431c-af85-15f7865b3ca0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7b830d2a-ce16-40ca-9b51-2aab02be4d33",
+            "Value": {
+                "id": "a1b2c3d4-e5f6-4789-a012-3456789aaa06",
+                "resourcePath": "objects\\oGoal\\oGoal.yy",
+                "resourceType": "GMObject"
             }
         },
         {
